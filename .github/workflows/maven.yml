@@ -5,9 +5,15 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master, productmanager, reachmodel ]
+    branches:
+      - master
+        - productmanager
+          - reachmodel
   pull_request:
-    branches: [ master, productmanager, reachmodel ]
+    branches:
+      - master
+        - productmanager
+          - reachmodel
 
 jobs:
   build:

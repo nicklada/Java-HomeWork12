@@ -11,28 +11,28 @@ class BookTest {
     void shouldMatchByNameIfExists() {
         String textToFind = "Story1";
         book.matches(textToFind);
-        assertTrue(true);
+        assertTrue(book.matches(textToFind));
     }
 
     @Test
     void shouldMatchByNameIfNotExists() {
         String textToFind = "Story2";
         book.matches(textToFind);
-        assertFalse(false);
+        assertFalse(book.matches(textToFind));
     }
 
     @Test
     void shouldMatchByAuthorIfExists() {
         String textToFind = "Lada";
         book.matches(textToFind);
-        assertTrue(true);
+        assertTrue(book.matches(textToFind));
     }
 
     @Test
     void shouldMatchByAuthorIfNotExists() {
         String textToFind = "Mari";
         book.matches(textToFind);
-        assertFalse(false);
+        assertFalse(book.matches(textToFind));
     }
 
 }

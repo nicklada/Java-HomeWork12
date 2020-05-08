@@ -4,16 +4,17 @@
 name: Java CI with Maven
 
 on:
-  branches:
-    - master
-    - productmanager
-    - reachmodel
   push:
+    branches:
+      - master
+      - productmanager
+      - reachmodel
   pull_request:
     branches:
       - master
       - productmanager
       - reachmodel
+
 jobs:
   build:
 

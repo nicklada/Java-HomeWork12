@@ -10,7 +10,6 @@ class SmartphoneTest {
     @Test
     void shouldMatchByNameIfExists() {
         String textToFind = "Iphone";
-        smartphone.matches(textToFind);
         assertTrue(smartphone.matches(textToFind));
     }
 

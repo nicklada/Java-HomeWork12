@@ -17,21 +17,18 @@ class SmartphoneTest {
     @Test
     void shouldMatchByNameIfNotExists() {
         String textToFind = "Galaxy";
-        smartphone.matches(textToFind);
         assertFalse(smartphone.matches(textToFind));
     }
 
     @Test
     void shouldMatchByProducerIfExists() {
         String textToFind = "Apple";
-        smartphone.matches(textToFind);
         assertTrue(smartphone.matches(textToFind));
     }
 
     @Test
     void shouldMatchByProducerIfNotExists() {
         String textToFind = "Samsung";
-        smartphone.matches(textToFind);
         assertFalse(smartphone.matches(textToFind));
     }
 

@@ -10,14 +10,12 @@ class ProductTest {
     @Test
     void shouldMatchByNameIfExists() {
         String textToFind = "Story1";
-        product.matches(textToFind);
         assertTrue(product.matches(textToFind));
     }
 
     @Test
     void shouldMatchByNameIfNotExists() {
         String textToFind = "Story2";
-        product.matches(textToFind);
         assertFalse(product.matches(textToFind));
     }
 
